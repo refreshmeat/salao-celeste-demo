@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./brand.css" />
   <link rel="stylesheet" href="./authentic.css" />
+  <link rel="stylesheet" href="./polish.css" />
   <script src="./app.js" defer></script>
+  <script src="./enhancements.js" defer></script>
 </head>
 <body>
   <div class="demo-bar"><span class="demo-dot"></span> PRÉVIA INTERATIVA DO PROJETO <span class="demo-divider">·</span> Agenda, equipe e preços ilustrativos</div>
@@ -22,17 +24,18 @@
       <nav class="main-nav" aria-label="Principal">
         <a href="#servicos">Serviços</a><a href="#profissionais">Profissionais</a><a href="#clube">Clube Celeste</a>
       </nav>
-      <div class="header-actions"><button class="text-button" id="my-bookings-top">Minhas reservas</button><button class="primary small" id="header-book">Agendar <span aria-hidden="true">↗</span></button><button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button></div>
+      <div class="header-actions"><button class="text-button" id="my-bookings-top">Minhas reservas</button><button class="text-button pro-header-link" id="header-pro" type="button">Painel do salão ↗</button><button class="primary small" id="header-book">Agendar <span aria-hidden="true">↗</span></button><button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button></div>
     </div>
   </header>
   <main>
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-content">
-          <p class="eyebrow"><span class="eyebrow-line"></span> BEM-VINDO AO CELESTE</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span> SALÃO CELESTE · AGENDE ONLINE</p>
           <h1>O seu momento <em>de se cuidar</em> começa aqui.</h1>
           <p class="hero-desc">Escolha o serviço, encontre seu profissional favorito e reserve seu horário em poucos cliques. Simples como deveria ser.</p>
           <div class="hero-ctas"><button class="primary large" id="hero-book">Marcar meu horário <span>↗</span></button><a class="secondary-link" href="#servicos">Explorar serviços <span>↘</span></a></div>
+          <div class="owner-preview-link"><span class="owner-preview-label">É da equipe?</span><button type="button" id="hero-pro" class="owner-preview-btn">Experimente a agenda do Junior <span>↗</span></button></div>
           <div class="hero-meta"><div class="mini-avatars"><span>J</span><span>✂</span><span>✿</span><span>+</span></div><div><strong>Seu time, seu cuidado.</strong><small>Profissionais para cada momento.</small></div></div>
         </div>
         <div class="hero-visual hero-showcase" aria-label="Exemplo ilustrativo da tela de agendamento online">
@@ -56,7 +59,7 @@
     </section>
     <section id="servicos" class="section services-section">
       <div class="wrap"><div class="section-top"><div><p class="eyebrow">O QUE FAZEMOS POR VOCÊ</p><h2>Cuidado para <em>todos os momentos.</em></h2></div><p class="section-intro">Do corte de sempre ao seu momento de relaxar. Tudo em um só lugar.</p></div>
-      <div class="service-search"><span aria-hidden="true">⌕</span><input id="service-search" placeholder="O que você procura? Corte, unha, barba..." type="search" aria-label="Pesquisar serviço" /><span class="search-shortcut">ENCONTRE SEU CUIDADO</span></div>
+      <div class="service-search"><span aria-hidden="true">⌕</span><input id="service-search" placeholder="Procure por corte, manicure, depilação..." type="search" aria-label="Pesquisar serviço" /><span class="search-shortcut">ENCONTRE SEU CUIDADO</span></div><div class="catalog-filters" id="catalog-filters" role="group" aria-label="Categorias de serviço"><button class="cat-filter selected" type="button" data-category="Todos">Todos os serviços</button><button class="cat-filter" type="button" data-category="Barbearia">Barbearia</button><button class="cat-filter" type="button" data-category="Cabelo">Cabelo</button><button class="cat-filter" type="button" data-category="Unhas">Unhas e pés</button><button class="cat-filter" type="button" data-category="Estética">Estética</button></div>
       <div class="service-grid" id="service-grid"></div>
       <div class="section-footnote">* Valores, duração dos serviços e horários de funcionamento são ilustrativos e devem ser confirmados pelo salão.</div>
     </section>
@@ -67,6 +70,7 @@
         <div class="team-grid" id="team-grid"></div>
       </div>
     </section>
+    <section class="owner-section" id="gestao"><div class="wrap owner-showcase"><div class="owner-copy"><p class="eyebrow">TECNOLOGIA QUE FACILITA O DIA</p><h2>Mais tempo atendendo.<em> Menos tempo organizando.</em></h2><p>Além do agendamento para clientes, cada profissional pode acompanhar a própria agenda, concluir atendimentos e bloquear horários. Tudo pensado para simplificar a rotina do salão.</p><div class="owner-features"><span>✓ Agenda por profissional</span><span>✓ Bloqueio de horários</span><span>✓ Encaixes e reservas manuais</span><span>✓ Resumo do dia</span></div><button class="primary" id="owner-panel-cta" type="button">Testar painel do Junior <span>↗</span></button><p class="owner-footnote">Painel de demonstração. Dados guardados apenas neste navegador.</p></div><div class="owner-mock" aria-label="Exemplo do painel de agendamentos"><div class="owner-mock-top"><div><span class="mock-dot"></span><strong>Agenda do Junior</strong></div><span>✳ CELESTE</span></div><div class="owner-mock-kpis"><div><span>ATENDIMENTOS</span><strong>04</strong></div><div><span>HORÁRIOS</span><strong>09h–18h</strong></div></div><div class="mock-agenda-item"><span>09:00</span><i></i><div><strong>Corte masculino</strong><small>Agendamento ilustrativo</small></div><b>Confirmado</b></div><div class="mock-agenda-item"><span>10:30</span><i></i><div><strong>Corte + barba</strong><small>Agendamento ilustrativo</small></div><b>Confirmado</b></div><div class="mock-agenda-item free"><span>11:30</span><i></i><div><strong>Horário disponível</strong><small>Pronto para reservar</small></div><b>Livre</b></div><div class="mock-agenda-item"><span>14:00</span><i></i><div><strong>Corte masculino</strong><small>Agendamento ilustrativo</small></div><b>Confirmado</b></div></div></div></section>
     <section class="quote-section"><div class="wrap quote-inner"><span class="quote-star">✳</span><h2>Mais do que sair bonito.<br /><em>É sair se sentindo bem.</em></h2><span class="quote-line"></span></div></section>
     <section id="clube" class="section plans-section">
       <div class="wrap">
