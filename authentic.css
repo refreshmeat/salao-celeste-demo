@@ -1,0 +1,71 @@
+/* Identidade fiel: logo oficial do Instagram e demonstração de interface, sem fotos de outros salões. */
+.brand,.footer-brand{display:flex;align-items:center;gap:11px}
+.brand-logo-real{width:58px;height:58px;max-height:none;object-fit:cover;border-radius:50%;border:2px solid #e5f5f9;box-shadow:0 2px 8px #00496411}
+.brand-text-real{font-family:"DM Sans",sans-serif;color:#246b83;font-size:13px;line-height:1.08;font-weight:600;letter-spacing:-.2px;white-space:nowrap}
+.brand-text-real strong{font-family:"Playfair Display",serif;font-size:24px;color:#068eaf;letter-spacing:-.8px}
+.brand-text-real small{display:block;font-size:9px;font-weight:800;letter-spacing:3px;color:#4c6975;margin-top:4px}
+.footer-brand .brand-logo-real{width:54px;height:54px}
+.footer-brand .brand-text-real{color:#255a70}
+.footer-brand .brand-text-real strong{font-size:23px}
+.hero .hero-showcase{border-radius:130px 130px 20px 20px;background:linear-gradient(145deg,#e5faff 5%,#b0e5f0 57%,#71c3db 100%);box-shadow:inset 0 0 0 1px #a1dceb;isolation:isolate;min-height:600px;overflow:visible;display:flex;align-items:center;justify-content:center;padding:40px 30px}
+.showcase-orbit{border:1px solid #fff8;position:absolute;inset:23px;border-radius:125px 125px 20px 20px;pointer-events:none;z-index:-1}
+.orbit-two{inset:45px;border-color:#ffffff85}
+.showcase-kicker{position:absolute;top:51px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:1.6px;white-space:nowrap;color:#26758c;font-weight:800;text-align:center}
+.showcase-kicker span{color:#11a9cb;font-size:15px}
+.showcase-card{background:#fff;border-radius:20px;box-shadow:0 25px 65px #02577c34;width:min(100%,407px);padding:26px 24px 24px;margin:34px 0 28px;transform:rotate(-2deg);border:1px solid #f4fbfd;transition:transform .3s}
+.showcase-card:hover{transform:rotate(0deg)}
+.showcase-card-head{display:flex;gap:8px;justify-content:space-between;align-items:flex-start;padding-bottom:24px;border-bottom:1px solid #eaf2f5}
+.showcase-brand{font-size:23px;line-height:1;font-weight:800;color:#0c99b9;letter-spacing:-1px}
+.showcase-brand-dot{color:#21b3d0}
+.showcase-brand small{display:block;font:800 8px/1.2 "DM Sans",sans-serif;letter-spacing:1.4px;margin:5px 0 0;color:#728f9d}
+.showcase-pill{font-size:9px;color:#26755d;background:#eaf8ef;border-radius:20px;padding:7px 9px;font-weight:700;white-space:nowrap}
+.showcase-pill i{display:inline-block;width:7px;height:7px;background:#53b283;border-radius:50%;margin-right:4px}
+.showcase-step{font-size:9px;letter-spacing:1.7px;font-weight:800;color:#8ca6b2;margin:23px 0 5px}
+.showcase-card h3{font:600 29px/1.15 "Playfair Display",serif;letter-spacing:-.7px;color:#1a4255;margin:0 0 23px}
+.showcase-card h3 em{color:#099ebd}
+.showcase-choice{border:1px solid #e2eff3;border-radius:11px;background:#fafdff;padding:11px 12px;display:flex;align-items:center;gap:12px;margin-bottom:9px}
+.showcase-choice-icon{background:#e4f6fb;color:#008dae;border-radius:8px;font-size:21px;font-weight:800;width:39px;height:39px;display:grid;place-items:center;flex-shrink:0}
+.showcase-choice strong,.showcase-choice small{display:block}
+.showcase-choice strong{font-size:12px;color:#22475d}
+.showcase-choice small{font-size:10px;color:#7d96a1}
+.showcase-choice-tick{margin-left:auto;font-size:16px;color:#0f9bc0}
+.showcase-days,.showcase-slots{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-top:18px}
+.showcase-days span{background:#f0f7f9;color:#648290;border-radius:6px;text-align:center;padding:7px 0;font-size:9px;font-weight:800}
+.showcase-days span.on{background:#099dbd;color:white}
+.showcase-slots{grid-template-columns:repeat(4,1fr);margin:8px 0 15px}
+.showcase-slots span{border:1px solid #e4eff3;border-radius:6px;padding:7px 0;font-size:10px;color:#477183;text-align:center;font-weight:700}
+.showcase-slots span.on{background:#dcf3f9;border-color:#099fbe;color:#0283a4}
+.showcase-card .showcase-button{padding:12px 14px;font-size:12px;justify-content:space-between}
+.showcase-corner-label{position:absolute;bottom:23px;right:24px;color:#246681;font-size:9px;font-weight:800;letter-spacing:1.3px}
+.showcase-corner-label span{font-size:13px}
+.hero-showcase .floating-hours{left:-26px;bottom:35px;z-index:4}
+.team-portrait{display:flex;justify-content:center;align-items:center}
+.team-portrait .team-initial{font-size:88px}
+.team-card:nth-child(5) .team-portrait{background:linear-gradient(145deg,#d3f5f8,#398aaf)!important}
+@media(max-width:1090px){
+.brand-logo-real{width:49px;height:49px}
+.brand-text-real{font-size:11px}
+.brand-text-real strong{font-size:21px}
+.header-actions{gap:12px}
+.showcase-card{padding:21px}
+}
+@media(max-width:700px){
+.brand-logo-real{width:43px!important;height:43px!important}
+.brand-text-real{font-size:10px}
+.brand-text-real strong{font-size:18px}
+.brand-text-real small{font-size:7px;letter-spacing:2px}
+.header-inner{gap:9px}
+.hero .hero-showcase{height:525px;min-height:0;border-radius:110px 110px 17px 17px;padding:36px 20px 20px;margin-top:18px}
+.showcase-kicker{top:29px;font-size:8px;letter-spacing:1px}
+.showcase-card{padding:21px 16px;width:min(100%,350px);margin:27px 0 12px;border-radius:16px;transform:rotate(-1deg)}
+.showcase-card-head{padding-bottom:14px}
+.showcase-card h3{font-size:25px;margin-bottom:17px}
+.showcase-step{margin:15px 0 7px}
+.showcase-choice{padding:9px}
+.showcase-days{margin-top:13px}
+.showcase-slots{margin-bottom:12px}
+.hero-showcase .floating-hours{left:10px;bottom:-17px;min-width:218px;padding:10px 13px}
+.showcase-corner-label{bottom:19px;right:14px;font-size:8px}
+.footer-brand .brand-logo-real{width:51px!important;height:51px!important}
+}
+@media(max-width:400px){.showcase-pill{font-size:8px}.showcase-brand{font-size:20px}.showcase-brand small{font-size:7px}.hero .hero-showcase{height:530px}.showcase-card{width:100%}}
