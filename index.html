@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f5ee" />
+  <meta name="description" content="Salão Celeste. Seu momento de beleza começa aqui. Encontre seu profissional, escolha o serviço e agende seu horário." />
+  <title>Salão Celeste | Seu momento, seu horário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="demo-bar"><span class="demo-dot"></span> PRÉVIA INTERATIVA DO PROJETO <span class="demo-divider">·</span> Equipe, preços e serviços ilustrativos</div>
+  <header class="site-header" id="topo">
+    <div class="wrap header-inner">
+      <a class="brand" href="#topo" aria-label="Salão Celeste, início"><span class="brand-symbol">✳</span><span class="brand-text">celeste<small>SALÃO & BEM-ESTAR</small></span></a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#servicos">Serviços</a><a href="#profissionais">Profissionais</a><a href="#clube">Clube Celeste</a>
+      </nav>
+      <div class="header-actions"><button class="text-button" id="my-bookings-top">Minhas reservas</button><button class="primary small" id="header-book">Agendar <span aria-hidden="true">↗</span></button><button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> BEM-VINDO AO CELESTE</p>
+          <h1>O seu momento <em>de se cuidar</em> começa aqui.</h1>
+          <p class="hero-desc">Escolha o serviço, encontre seu profissional favorito e reserve seu horário em poucos cliques. Simples como deveria ser.</p>
+          <div class="hero-ctas"><button class="primary large" id="hero-book">Marcar meu horário <span>↗</span></button><a class="secondary-link" href="#servicos">Explorar serviços <span>↘</span></a></div>
+          <div class="hero-meta"><div class="mini-avatars"><span>J</span><span>R</span><span>C</span><span>+</span></div><div><strong>Seu time, seu cuidado.</strong><small>Profissionais para cada momento.</small></div></div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1350&q=85" alt="Interior acolhedor de salão de beleza" />
+          <div class="hero-visual-overlay"></div>
+          <div class="hero-stamp"><span>✦</span><strong>Um tempo<br />só seu.</strong></div>
+          <div class="floating-hours"><span class="hours-icon">◷</span><span><strong>Terça a domingo</strong><small>Das 9h às 18h</small></span><span class="hours-arrow">↗</span></div>
+        </div>
+      </div>
+      <div class="wrap hero-footer"><span>01 / ESCOLHA O SERVIÇO</span><span>02 / ESCOLHA O PROFISSIONAL</span><span>03 / PRONTO, TÁ MARCADO!</span></div>
+    </section>
+    <section id="servicos" class="section services-section">
+      <div class="wrap"><div class="section-top"><div><p class="eyebrow">O QUE FAZEMOS POR VOCÊ</p><h2>Cuidado para <em>todos os momentos.</em></h2></div><p class="section-intro">Do corte de sempre ao seu momento de relaxar. Tudo em um só lugar.</p></div>
+      <div class="service-search"><span aria-hidden="true">⌕</span><input id="service-search" placeholder="O que você procura? Corte, unha, barba..." type="search" aria-label="Pesquisar serviço" /><span class="search-shortcut">ENCONTRE SEU CUIDADO</span></div>
+      <div class="service-grid" id="service-grid"></div>
+      <div class="section-footnote">* Duração e valores são exemplos para a demonstração.</div>
+    </section>
+    <section id="profissionais" class="section team-section">
+      <div class="wrap">
+        <div class="section-top"><div><p class="eyebrow">QUEM CUIDA DE VOCÊ</p><h2>Gente boa faz <em>toda a diferença.</em></h2></div><p class="section-intro">Escolha seu profissional de confiança e veja os horários disponíveis.</p></div>
+        <div class="team-filter"><div class="pills" id="team-filters"><button class="pill active" data-team-filter="all">Todos</button><button class="pill" data-team-filter="barbearia">Barbearia</button><button class="pill" data-team-filter="beleza">Cabelo</button><button class="pill" data-team-filter="estetica">Estética & unhas</button></div></div>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+    <section class="quote-section"><div class="wrap quote-inner"><span class="quote-star">✳</span><h2>Mais do que sair bonito.<br /><em>É sair se sentindo bem.</em></h2><span class="quote-line"></span></div></section>
+    <section id="clube" class="section plans-section">
+      <div class="wrap">
+        <div class="section-top"><div><p class="eyebrow">UM JEITO NOVO DE SE CUIDAR</p><h2>Seu cuidado, <em>todo mês.</em></h2></div><p class="section-intro">Conheça a proposta do Clube Celeste: benefícios especiais para quem quer estar sempre em dia.</p></div>
+        <div class="plan-grid">
+          <article class="plan-card"><div class="plan-symbol">✦</div><p class="plan-label">FLEXIBILIDADE TOTAL</p><h3>Avulso</h3><p class="plan-sub">Pra quem vem quando dá vontade.</p><div class="plan-price">Pague <em>por visita</em></div><div class="plan-separator"></div><ul><li>Escolha qualquer serviço</li><li>Seu profissional preferido</li><li>Agende online em segundos</li></ul><button class="outline full" data-plan="avulso">Agendar um serviço ↗</button></article>
+          <article class="plan-card featured"><div class="featured-tag">IDEIA DO CLUBE ✳</div><div class="plan-symbol">✳</div><p class="plan-label">PRA QUEM SE CUIDA SEMPRE</p><h3>Clube Corte</h3><p class="plan-sub">Pra estar de corte feito todo dia.</p><div class="plan-price">R$ 99,90 <small>/ mês*</small></div><div class="plan-separator"></div><ul><li>Cortes ilimitados no mês*</li><li>Escolha seu barbeiro favorito</li><li>Agendamento online prioritário</li><li>Mais praticidade, todo mês</li></ul><button class="primary full" data-plan="corte">Quero conhecer o plano ↗</button></article>
+          <article class="plan-card"><div class="plan-symbol">✧</div><p class="plan-label">UM CUIDADO A MAIS</p><h3>Clube Completo</h3><p class="plan-sub">Seu ritual de cuidado favorito.</p><div class="plan-price">R$ 149,90 <small>/ mês*</small></div><div class="plan-separator"></div><ul><li>Cortes ilimitados no mês*</li><li>Barba incluída no plano*</li><li>Escolha seu barbeiro favorito</li><li>Agendamento fácil e rápido</li></ul><button class="outline full" data-plan="completo">Quero conhecer o plano ↗</button></article>
+        </div>
+        <p class="plan-disclaimer">* Planos e preços são sugestões de demonstração, ainda não oferecidos pelo salão. Regras de uso, valores e disponibilidade precisam ser definidos. Nenhuma cobrança é realizada neste site.</p>
+      </div>
+    </section>
+    <section class="how-section"><div class="wrap how-grid"><div><p class="eyebrow">TUDO NA PALMA DA MÃO</p><h2>Agendar ficou <em>fácil assim.</em></h2></div><div class="how-items"><div><span>01</span><strong>Escolha seu cuidado</strong><p>Explore nossos serviços ou procure pelo seu profissional.</p></div><div><span>02</span><strong>Encontre seu horário</strong><p>Veja os horários livres e escolha o que encaixa na sua rotina.</p></div><div><span>03</span><strong>Deixa com a gente</strong><p>Prontinho! Sua reserva aparece na sua agenda do Celeste.</p></div></div></div></section>
+    <section class="final-cta"><div class="wrap final-cta-inner"><div><p class="eyebrow">UM TEMPINHO PRA VOCÊ</p><h2>Seu próximo momento <em>Celeste</em> te espera.</h2></div><button class="primary light" id="bottom-book">Reservar meu horário ↗</button></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div class="footer-brand"><span class="brand-symbol">✳</span><span class="brand-text">celeste<small>SALÃO & BEM-ESTAR</small></span></div><div class="footer-info"><span>Atendimento: terça a domingo, 9h às 18h</span><span>Uma experiência de cuidado feita pra você.</span></div><button id="professional-entry" class="footer-pro">Área do profissional ↗</button></div><div class="wrap copyright"><span>© 2026 Salão Celeste · Conceito demonstrativo</span><span>Feito para facilitar a vida de quem cuida e de quem é cuidado.</span></div></footer>
+  <div class="mobile-cta"><button class="primary full" id="mobile-book">Agendar meu horário ↗</button></div>
+  <div class="overlay" id="booking-overlay" aria-hidden="true"><div class="overlay-shade" data-close="booking"></div><section class="modal booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title"><div class="modal-head"><div><span class="modal-eyebrow">SALÃO CELESTE ✳</span><h2 id="booking-title">Vamos agendar?</h2></div><button class="close-btn" data-close="booking" aria-label="Fechar">×</button></div><div class="booking-progress"><span class="progress-step active" data-progress="1">1 <small>Serviço</small></span><i></i><span class="progress-step" data-progress="2">2 <small>Profissional</small></span><i></i><span class="progress-step" data-progress="3">3 <small>Horário</small></span><i></i><span class="progress-step" data-progress="4">4 <small>Confirmar</small></span></div><div class="modal-body" id="booking-body"></div><div class="modal-bottom"><button id="booking-back" class="ghost-button" type="button">← Voltar</button><div id="booking-summary"></div><button id="booking-next" class="primary" type="button">Continuar →</button></div></section></div>
+  <div class="overlay" id="client-overlay" aria-hidden="true"><div class="overlay-shade" data-close="client"></div><section class="modal panel-modal" role="dialog" aria-modal="true" aria-labelledby="client-title"><div class="modal-head"><div><span class="modal-eyebrow">ÁREA DO CLIENTE</span><h2 id="client-title">Minhas reservas</h2></div><button class="close-btn" data-close="client" aria-label="Fechar">×</button></div><div class="panel-body" id="client-body"></div></section></div>
+  <div class="overlay" id="pro-overlay" aria-hidden="true"><div class="overlay-shade" data-close="pro"></div><section class="modal pro-modal" role="dialog" aria-modal="true" aria-labelledby="pro-title"><div class="modal-head pro-head"><div><span class="modal-eyebrow">PAINEL PROFISSIONAL · DEMO</span><h2 id="pro-title">Minha agenda <em>Celeste.</em></h2></div><button class="close-btn" data-close="pro" aria-label="Fechar">×</button></div><div id="pro-body" class="pro-body"></div></section></div>
+  <div class="overlay" id="plan-overlay" aria-hidden="true"><div class="overlay-shade" data-close="plan"></div><section class="modal panel-modal plan-dialog" role="dialog" aria-modal="true" aria-labelledby="plan-title"><div class="modal-head"><div><span class="modal-eyebrow">CLUBE CELESTE · CONCEITO</span><h2 id="plan-title">Seu plano de autocuidado</h2></div><button class="close-btn" data-close="plan" aria-label="Fechar">×</button></div><div class="panel-body" id="plan-body"></div></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
