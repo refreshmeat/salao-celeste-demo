@@ -6,6 +6,9 @@ const services=[
 {id:"feminino",name:"Corte feminino",category:"Cabelo",icon:"✿",price:75,duration:60,people:["camila"]},
 {id:"manicure",name:"Manicure",category:"Unhas",icon:"♡",price:35,duration:45,people:["ana"]},
 {id:"pedicure",name:"Pedicure",category:"Unhas",icon:"❀",price:40,duration:45,people:["ana"]},
+{id:"hidratacao",name:"Hidratação capilar",category:"Cabelo",icon:"✧",price:65,duration:60,people:["camila"]},
+{id:"pes",name:"Plástica dos pés",category:"Pés",icon:"❃",price:80,duration:60,people:["ana"]},
+{id:"alongamento",name:"Alongamento de unhas",category:"Unhas",icon:"✿",price:100,duration:90,people:["ana"]},
 {id:"depilacao",name:"Depilação",category:"Estética",icon:"☼",price:55,duration:45,people:["ana"]}
 ];
 const professionals=[
@@ -35,7 +38,7 @@ let bookings=loadBookings();
 let customer=(()=>{try{return JSON.parse(localStorage.getItem(USER_KEY)||"null")}catch(e){return null}})();
 let booking={step:1,serviceId:null,professionalId:null,date:null,time:null,successId:null};
 let proFilter="junior",proDate=today(),currentPlan="corte",toastTimer;
-function nextOpenDate(offset=0){let d=new Date();d.setDate(d.getDate()+offset);for(let i=0;i<14&&!isOpen(d);i++)d.setDate(d.getDate()+1);return localISO(d)}
+function nextOpenDate(offset=0){let d=new Date();if(offset===0&&d.getHours()*60+d.getMinutes()>=17*60+30)d.setDate(d.getDate()+1);d.setDate(d.getDate()+offset);for(let i=0;i<14&&!isOpen(d);i++)d.setDate(d.getDate()+1);return localISO(d)}
 function seed(){if(localStorage.getItem(KEY)!==null)return;let first=nextOpenDate(1),second=nextOpenDate(2);bookings=[
 {id:"demo-1",serviceId:"corte",professionalId:"junior",date:first,time:"10:00",name:"Lucas (exemplo)",phone:"21999990000",status:"confirmed",demo:true},
 {id:"demo-2",serviceId:"combo",professionalId:"junior",date:first,time:"14:00",name:"Pedro (exemplo)",phone:"21999990001",status:"confirmed",demo:true},

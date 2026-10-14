@@ -1,0 +1,101 @@
+/* Salão Celeste: cores inspiradas no perfil @salaoceleste2020. Logomarca redesenhada para apresentação, não o arquivo oficial. */
+:root{--celeste:#079fc2;--deep:#18394d;--ink:#263b4b;--sky:#dff6fb;--pale:#f0faff;--ice:#f8fcfd}
+body{color:var(--ink);background:var(--ice)}
+.site-header,.hero{background:#fff}
+.site-header{border-bottom-color:#e2eff2}
+.brand-logo{display:block;width:220px;height:auto;max-height:62px}
+.footer-brand{display:inline-flex;background:#fff;padding:7px 15px;border-radius:9px}
+.footer-brand .brand-logo{width:230px}
+.demo-bar{background:linear-gradient(90deg,#087eaa,#1ab8cd);color:#fff}
+.demo-dot{background:#d7fcff}
+.main-nav{color:#405c6d}
+.main-nav a:hover,.secondary-link:hover,.text-button:hover{color:#078fb2}
+.text-button,.footer-pro{color:#204b61}
+.primary{background:#079fc2;border-color:#079fc2;color:white}
+.primary:hover{background:#047fa3;border-color:#047fa3;box-shadow:0 12px 25px #079fc22a}
+.eyebrow,.plan-label,.wizard-label,.modal-eyebrow{color:#078fac}
+.eyebrow-line{background:#079fc2}
+.hero h1,.section h2,.how-section h2,.final-cta h2{color:#203e51}
+.hero h1 em,.section h2 em,.how-section h2 em{color:#079fc2}
+.hero-desc,.section-intro{color:#627c89}
+.hero-meta small,.service-card p{color:#6a8794}
+.hero-stamp{background:#e2f8fb;border-color:#fff;color:#08799a}
+.floating-hours{box-shadow:0 15px 50px #094c6325}
+.hours-icon,.hours-arrow{color:#079fc2}
+.mini-avatars span:nth-child(1){background:#0facc9}.mini-avatars span:nth-child(2){background:#80b4c6}.mini-avatars span:nth-child(3){background:#6686a9}.mini-avatars span:nth-child(4){background:#234c65}
+.hero-footer{border-top-color:#e6f2f6;color:#7391a0}
+.services-section{background:#eff8fa}
+.service-search,.service-card,.team-card,.plan-card{border-color:#dcecf1}
+.service-icon{background:#e1f7fa;color:#069fc2}
+.service-card:nth-child(3n+2) .service-icon{background:#e8f0fa;color:#517ea9}
+.service-card:nth-child(3n) .service-icon{background:#ecf8f4;color:#388a87}
+.service-card:hover{border-color:#95cfe0;box-shadow:0 16px 45px #1a7d9b13}
+.service-price,.plan-price{color:#18475b}
+.round-arrow{color:#008faf;border-color:#d9e8ee}
+.service-card:hover .round-arrow{background:#079fc2;border-color:#079fc2}
+.section-footnote,.plan-disclaimer{color:#75919b}
+.team-section{background:#fff}
+.pill{border-color:#d8e9ed;color:#58717e}
+.pill.active,.pill:hover{background:#183f55;border-color:#183f55}
+.team-portrait{background:linear-gradient(145deg,#d5f6fa,#61c1d4)!important;position:relative}
+.team-card:nth-child(2) .team-portrait{background:linear-gradient(145deg,#dbeefe,#668eb4)!important}
+.team-card:nth-child(3) .team-portrait{background:linear-gradient(145deg,#eafaff,#80bdcf)!important}
+.team-card:nth-child(4) .team-portrait{background:linear-gradient(145deg,#d9eee9,#72a5b3)!important}
+.team-portrait img{display:none!important}
+.team-initial{display:flex!important;color:#ffffffd9;text-shadow:0 12px 30px #16556b30;font-size:91px}
+.team-category{background:#f5fdfff2;color:#32677e}
+.team-details p{color:#69838f}
+.team-details button{color:#038faf}
+.quote-section{background:#d7eff4}
+.quote-star,.quote-inner h2 em{color:#008bb1}
+.quote-inner h2{color:#1b485b}
+.quote-line{background:#099cbd}
+.plans-section{background:#f6fbfc}
+.plan-card .plan-symbol{color:#0a9ebd}
+.plan-card .plan-sub{color:#65818c}
+.plan-card li:before{color:#079fc2}
+.plan-card.featured{background:#174055;border-color:#174055;box-shadow:0 18px 40px #11405820}
+.plan-card.featured h3,.plan-card.featured .plan-price{color:white}
+.plan-card.featured .plan-symbol{color:#69d8e4}
+.plan-card.featured .plan-label,.plan-card.featured li:before{color:#8fe1ea}
+.plan-card.featured .plan-sub{color:#c1dbe5}
+.featured-tag{background:#00a4c4}
+.outline{color:#165676;border-color:#b9d9e3}
+.outline:hover{background:#edfaff}
+.how-items>div{border-color:#0b9fc1}
+.how-items span{color:#059fc2}
+.final-cta{background:linear-gradient(105deg,#078cad,#19b4cf)}
+.final-cta h2{color:#fff}
+.final-cta h2 em{color:#d2faff}
+.final-cta .eyebrow{color:#d5f8ff}
+.primary.light{background:#fff;color:#086b87;border-color:#fff}
+footer{background:#16394e}
+.footer-info{color:#c9e0e7}
+.footer-pro{color:#ace8f4}
+.copyright{border-color:#416071;color:#b1cbd5}
+.modal{background:#fbfdfe}
+.modal-head{border-color:#dceaf0}
+.modal-head h2{color:#174458}
+.modal-head h2 em{color:#079fc2}
+.close-btn{background:#e7f3f7;color:#326075}
+.close-btn:hover{background:#d5eef5}
+.booking-progress{background:#f0f9fa}
+.progress-step.active{color:#049abb}
+.progress-step.done{color:#327a91}
+.modal-body{background:#fbfdfd}
+.option-card{border-color:#e0edf0}
+.option-card.selected,.option-card:hover{border-color:#079fc2;background:#f0fbfd}
+.option-card.selected{box-shadow:0 0 0 2px #089abc22}
+.option-emoji{background:#e7f7fa}
+.option-check{color:#079fc2}
+.booking-note,.plan-banner{background:#eaf7fa;color:#49788c}
+.date-btn.active,.time-slot.selected{background:#079fc2;border-color:#079fc2}
+.time-slot:hover:not(:disabled){border-color:#079fc2}
+.stat{background:#eaf5f9}
+.stat strong{color:#204b62}
+.agenda-mark{background:#0a9fc2}
+.booking-ticket{border-color:#dcecf1}
+.toast{background:#153e53}
+@media(max-width:700px){.brand-logo{width:185px;max-height:53px}.footer-brand .brand-logo{width:210px}}
+
+.footer-info a{color:#b1f0fa;text-decoration:underline;text-underline-offset:3px}.hero-visual-overlay{background:linear-gradient(to bottom,#006e9a08 20%,#123b5699 100%)}@media(max-width:700px){.header-actions .text-button{display:block;font-size:11px;color:#0b86a4}.header-actions .mobile-menu{display:none}.brand-logo{width:175px}.header-inner{gap:9px}.header-actions{gap:3px}}
